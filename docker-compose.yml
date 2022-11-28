@@ -8,13 +8,12 @@ services:
             args:
                 RAM_AMOUNT: ${RAM_AMOUNT}
         volumes:
-            - /mnt/mine_server_data:/server
+            - /mnt/modpack_server_data:/server
         ports:
             - 25565:25565
             - 25575:25575
-            - 19132:19132
 volumes:
-    mine_server_data:
+    modpack_server_data:
 
 
 
