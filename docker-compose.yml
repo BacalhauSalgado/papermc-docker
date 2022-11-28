@@ -2,11 +2,9 @@ version: "3"
 
 services:
     minecraft-server:
-        container_name: ${container_name}
+        container_name: minecraft-docker
         build:
             context: .
-            args:
-                RAM_AMOUNT: ${RAM_AMOUNT}
         volumes:
             - /mnt/modpack_server_data:/server
         ports:
